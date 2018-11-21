@@ -6,9 +6,7 @@ class Header extends Component {
 	render() {
 		return (
 			<Fragment>
-				<input>
-
-				</input>
+				<h2>Header</h2>
 			</Fragment>
 		);
 	}
