@@ -1,15 +1,20 @@
-import React, { Component } from 'react';
+import React, { Component, Framg, Fragment } from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
 import './App.css';
 import axios from 'axios';
+import Home from './components/Home';
 import Header from './components/Header';
 
 class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <Header/>
-      </div>
+      <Router>
+        <Fragment>
+          <Route path="/" component= {Home} />
+        </Fragment>
+      </Router>
     );
   }
 }
